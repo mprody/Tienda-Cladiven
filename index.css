@@ -1,0 +1,131 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  color: #623873;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: #623873;
+  display: block;
+  text-decoration: none;
+}
+
+header ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 65%;
+  height: 2px;
+  background: #c686e6;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+header ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 150px;
+  background: #fff;
+  padding: 0;
+  display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1.5px solid #c686e6;
+}
+
+header .navbar ul li ul li a {
+  font-size: 0.9em;
+  color: #623873;
+}
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: #623873;
+  cursor: pointer;
+  display: none;
+}
+
+.hero-panel {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  /*Fondo de pantalla del hero-panel*/
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/img/heropanel.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.hero-panel h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.boton-heroPanel {
+  display: block;
+  width: 200px;
+  border: 3px solid black;
+
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  border-radius: 20px;
+}
