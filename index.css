@@ -1,15 +1,23 @@
 * {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+  background: #e0e0e0;
 }
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: #ffffff;
+  background:#ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   height: 60px;
-  padding: 0px 7%;
+  width: 100%;
+  padding-left: 0 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,9 +41,10 @@ header .navbar ul li {
   position: relative;
   float: left;
 }
+
 header .navbar ul li a {
-  font-size: 20px;
-  padding: 20px;
+  font-size: 19px;
+  padding: 12px;
   color: #623873;
   display: block;
   text-decoration: none;
@@ -77,9 +86,11 @@ header .navbar ul li ul li a {
   font-size: 0.9em;
   color: #623873;
 }
+
 header .navbar ul li:hover > ul {
   display: initial;
 }
+
 #menu-bar {
   display: none;
 }
@@ -92,7 +103,7 @@ header label {
 }
 
 .hero-panel {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -129,3 +140,46 @@ header label {
   font-size: 1.5em;
   border-radius: 20px;
 }
+
+.temporada{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.carta{
+  background: white;
+  width: 250px;
+  margin: 40px;
+  border-radius: 15px;
+}
+
+.imagen-carta{
+  background-color: aqua;
+  height: 270px;
+  margin-bottom: 15px;
+  border-radius: 15px 15px 0 0 ;
+  background-size: cover;
+}
+.carta h2{
+  margin: 5px;
+}
+.carta p{
+  margin: 5px 10px;
+}
+.producto1{
+  background-image: url(img/Anillos/1.jpeg);
+}
+.producto2{
+  background-image: url(img/Aritos/1.jpeg);
+}
+.producto3{
+  background-image: url(img/Collares/1.jpeg);
+}
+
+ .btn-carta{
+  background-color: #623873;
+  color: white;
+  padding: 5px 10px;
+  margin: 20px 50px;
+ }
